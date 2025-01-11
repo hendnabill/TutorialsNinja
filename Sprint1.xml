@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint1">
+    <parameter name="browsername" value=""/>
+
+    <test name="Register with Valid Data">
+        <classes>
+            <class name="testcases.TC01_Registration">
+                <methods>
+                    <include name="validRegister_p"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test name="Login with register Data">
+        <classes>
+            <class name="testcases.TC02_Login">
+                <methods>
+                    <include name="validLogin_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Reset Password">
+        <classes>
+            <class name="testcases.TC03_ResetPassword">
+                <methods>
+                    <include name="resetPassword_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Search For Product">
+        <classes>
+            <class name="testcases.TC04_HomePage">
+                <methods>
+                    <include name="searchForProduct_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="switch between currencies">
+        <classes>
+            <class name="testcases.TC04_HomePage">
+                <methods>
+                    <include name="switchCurrency_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

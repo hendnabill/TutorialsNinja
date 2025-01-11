@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" register with valid data" parallel="tests" thread-count="2" >
+    <parameter name="browsername" value=""/>
+
+    <test name="Register with Valid Data with chreomdriver">
+        <parameter name="browsername" value=""/>
+        <classes>
+            <class name="testcases.TC01_Registration">
+                <methods>
+                    <include name="validRegister_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Register with Valid Data with firefox">
+        <parameter name="browsername" value="firefox"/>
+        <classes>
+            <class name="testcases.TC01_Registration">
+                <methods>
+                    <include name="validRegister_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browsername" value=""/>
+
+    <test name="Create successful Order">
+        <classes>
+            <class name="testcases.TC07_CreateOrder">
+                <methods>
+                    <include name="createOrder_p"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

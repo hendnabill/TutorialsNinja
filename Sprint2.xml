@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sprint2">
+    <parameter name="browsername" value=""/>
+
+    <test name="Hover on random category">
+        <classes>
+            <class name="testcases.TC04_HomePage">
+                <methods>
+                    <include name="hoverRandomCategory_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Logged user could add product to Shopping cart">
+        <classes>
+            <class name="testcases.TC05_AddProductToCart">
+                <methods>
+                    <include name="addToCart_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="Logged user could add products to Wishlist">
+        <classes>
+            <class name="testcases.TC04_HomePage">
+                <methods>
+                    <include name="addToWishlist_p"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
